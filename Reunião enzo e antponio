@@ -1,0 +1,16 @@
+def recomendar_sala(participantes, tipo_reuniao):
+    if participantes <= 0:
+        return "Número de participantes inválido."
+        
+    if tipo_reuniao == "executiva" or participantes > 15:
+        return "Sala Grande"
+    elif participantes <= 5:
+        return "Sala Pequena"
+    elif participantes <= 15:
+        return "Sala Media"
+    #elif participantes >= 15:
+        #return "Sala Grande"
+
+participante =int(input("numero de participantes?"))
+sala = recomendar_sala(participante,"exucutiva")
+print(sala)
